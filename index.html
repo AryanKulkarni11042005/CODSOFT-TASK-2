@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="loader"></div>
+    <header>
+        <nav>
+            <div class="pfp">
+                
+                <!-- <img src="assets/pfp.jpg" alt="Profile Photo"> -->
+                <h1>Aryan Kulkarni</h1>
+                
+            </div>
+            <div class="navlist">
+                 <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div>
+           
+        </nav>        
+    </header>
+    <main>
+        <!-- home starts here -->
+        <div class="home" id="home">
+           <div>
+        <h1 class="hi" style="color: white;">
+            <span>Hi! I am Aryan Kulkarni</span><br>
+            An aspiring computer engineering student
+        </h1>
+        </div>
+        <div>
+            <img src="assets/pfp.jpg" alt="Profile Photo" class="profile">
+        </div> 
+        </div>
+       
+        <!-- About Me Starts here-->
+        <div class="about" id="about">
+            <h1 style="font-size: 36px; color: #69dbff;">About me</h1>
+            <p style="color: white;">
+                I am a dedicated computer engineering student at the Vidyalankar Institute of Technology. <br>
+                My passion lies in coding, and I am always eager to learn and explore new technologies. <br>
+                Additionally, I am a tech enthusiast with a love for music and sports.
+            </p>   
+        </div>
+        
+        <!-- Skills Start here -->
+        <div class="skill" id="skill">
+            <div class="container">
+                <h1>Skills</h1>
+                <div class="skill-category">
+                    <h2 style="color: white;">Programming Languages</h2>
+                    <ul>
+                        <li><img src="/assets/Python-logo-notext.svg.png" alt="" class="skill-logo">Python</li>
+                        <li><img src="/assets/Unofficial_JavaScript_logo_2.svg.png" alt="" class="skill-logo">JavaScript</li>
+                        <li><img src="/assets/java.webp" alt="" class="skill-logo">Java</li>
+                        <li><img src="/assets/cpp_logo.png" alt="" class="skill-logo">C++</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h2 style="color: white;">Frameworks</h2>
+                    <ul>
+                        <li><img src="/assets/React-icon.svg.png" alt="" class="skill-logo">React</li>
+                        <li><img src="/assets/nodejs-logo-svgrepo-com.svg" alt="" class="skill-logo">Node.js</li>
+                        <li><img src="/assets/express-1.png" alt="" class="skill-logo">Express</li>
+                        <li><img src="/assets/flask.svg" alt="" class="skill-logo">Flask</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- project section starts here -->
+         <div class="project" id="project">
+            <h1>Projects</h1>
+            <div class="project-section">
+                <div class="project-card">
+                    <h2 style="color: white">Railway Ticketing System</h2>
+                    <img src="assets/railway.png" alt="railway_ticketing_system image" class="railimage">
+                    <p style="color: white;">
+                        A project that simulates a railway ticketing system. It is built using Python and SQLite and Flask
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h2 style="color: white;">Tic-Tac-Toe Game</h2>
+                    <img src="assets/tic-tac.png" alt="Tic Tac Toe Game Image" class="pgimg">
+                    <p style="color: white;">
+                        A simple Tic-Tac-Toe game built using HTML CSS and Javascript
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h2 style="color: white;">Tuition Classes Management System</h2>
+                    <img src="assets/DBMS.png" alt="Tuition Classes Management" class="tuition">
+                    <p style="color: white;">
+                        Tuititon Classes Management System using PostgresSQL Express React and Node
+                    </p>
+                </div>
+            </div>
+         </div>
+         <!-- resume section starts here -->
+          <div class="resume" id="resume">
+            <h1>Resume</h1>
+            <p style="color: white;">You can download my resume by clicking the link below:</p>
+            <a href="assets/AryanKulkarniResume.pdf" download="AryanKulkarniResume.pdf">Download Resume</a>
+          </div>
+         <!-- contact me starts here -->
+          <div class="contact" id="contact">
+            <h1>Contact Me</h1>
+            <div class="contact-section">
+                <div class="links">
+                    <div>
+                        <h3 style="color: white">Email: <a href="mailto:aryankulkarni1104@gmail.com" style="color: #69dbff">aryankulkarni1104@gmail.com</a></h3>
+    
+                    </div>
+                    <div>
+                        <h3 style="color: white">LinkedIn: <a href="https://www.linkedin.com/in/aryan-kulkarni-a24a182b9" target="_blank" style="color: #69dbff;">Aryan Kulkarni</a></h3>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+          </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <p>© 2024 Aryan Kulkarni</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                   
+                });
+            });
+        });
+    </script>
+</body>
+</html>
